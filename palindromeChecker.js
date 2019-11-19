@@ -3,11 +3,7 @@ function palindrome(word) {
   let isPalindrome;
   let lowerCaseWord = word.toLowerCase().replace(regex, '');
   let reverseOrder = lowerCaseWord.split('').reverse().join(''); 
-  if(reverseOrder === lowerCaseWord) {
-    isPalindrome = true;
-  } else {
-    isPalindrome = false;
-  }
+  isPalindrome = (reverseOrder === lowerCaseWord);
   
   return isPalindrome
 }
